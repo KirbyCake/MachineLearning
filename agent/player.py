@@ -88,7 +88,7 @@ def to_numpy(location):
 
 def quaternion_to_euler(x, y, z, w):
     t = +2.0 * (w * y - z * x)
-    t = +1.0 if t > +1.0 else
+    t = +1.0 if t > +1.0 else t
     t = -1.0 if t < -1.0 else t
     Y = math.degrees(math.asin(t))
 
